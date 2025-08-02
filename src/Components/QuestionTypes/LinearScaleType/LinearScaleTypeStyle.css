@@ -1,0 +1,39 @@
+.linear-scale-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.scale-input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.scale-box {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  background-color: #E8F0FE;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scale-slider {
+  flex: 1;
+  accent-color: #4A90E2;
+}
+
+.scale-value {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+}

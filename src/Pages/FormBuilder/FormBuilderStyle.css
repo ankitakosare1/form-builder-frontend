@@ -1,0 +1,94 @@
+.form-builder {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-area-wrapper {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1.5px solid gray;
+    border-bottom: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 10px 5px 0 0;
+    position: relative;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+}
+
+.actions button {
+    margin-left: 1rem;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+}
+
+.btn1 {
+    background-color: #e4edf9;
+}
+
+.btn2 {
+    color: white;
+    background-color: black;
+}
+
+.top-bar-divider {
+    height: 1.5px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: gray;
+}
+
+.main-content-wrapper {
+  position: relative; 
+  border: none;      
+  outline: none;     
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+
+.main-content-row {
+    display: flex;
+    height: calc(100% - 80px);
+}
+
+.page-content-wrapper {
+    flex: 1;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: spin 0.8s linear infinite;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.btn2[disabled] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}

@@ -1,0 +1,47 @@
+.verify-otp-page .auth-container{
+    min-height: 100vh;
+    
+}
+.verify-otp-page .auth-form-layout{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 60px 16px;
+}
+
+.verify-otp-page .auth-form-wrapper{
+    padding: 36px 40px;
+}
+
+.verify-otp-page .auth-title{
+    margin-bottom: 10px;
+}
+
+.verify-otp-page .auth-subtitle{
+    margin-bottom: 20px;
+}
+
+.verify-otp-page .auth-input-group{
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.verify-otp-page .auth-button{
+    padding: 12px 0; 
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

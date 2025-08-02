@@ -1,0 +1,152 @@
+.modal-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+/* Blurred Background */
+/* .blur-background {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 99;
+  border-radius: 8px;
+} */
+
+
+.modal-container {
+  position: relative;
+  background: #fff;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 24px;
+  z-index: 101;
+} 
+
+/* Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.modal-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Close Button */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  color: #666;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* Upload Box */
+.file-name {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.upload-box {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+  margin-bottom: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.upload-box:hover {
+  border-color: #4da3ff;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.upload-label {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.upload-subtext {
+  font-size: 13px;
+  color: #777;
+  margin-top: 8px;
+}
+
+.or-text {
+  margin: 12px 0 4px;
+  color: #555;
+  font-size: 13px;
+}
+
+/* Buttons */
+.browse-btn {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.browse-btn:hover {
+  background: #006ae6;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancel-btn {
+  background: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background: #d5d5d5;
+}
+
+.upload-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.upload-btn.disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+

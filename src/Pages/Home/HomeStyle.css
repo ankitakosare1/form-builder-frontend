@@ -1,0 +1,329 @@
+/* Container */
+.home-container {
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.home-container .sidebar {
+  width: 230px; /* Independent width for Home */
+  background-color: #F9FBFD;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px;
+  flex-shrink: 0;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  border-right: 1px solid #e5e7eb;
+}
+
+
+/* Main Content Wrapper (Scrollable) */
+.main-content-wrapper {
+    
+    flex: 1;
+    background: #ffffff;
+    border: 1.5px solid gray;
+    border-left: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: calc(100vh - 10px);
+    overflow-y: auto;
+    padding: 20px; /* Inner spacing for content */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Content Blur (Modal Overlay) */
+.content-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    z-index: 10;
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+/* Main Content */
+.main-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: 350;
+    color: #1F2937;
+    padding-bottom: 16px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: gray;
+}
+
+/* Quick Actions */
+.quick-actions {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 32px;
+}
+
+.action-card {
+    background-color: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    gap: 4px;
+    transition: transform 0.2s ease;
+}
+
+.action-card:hover {
+    transform: translateY(-2px);
+}
+
+.icon-bg {
+    background-color: #5DBBFF;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+.icon-bg img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.action-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.action-subtitle {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+/* Works Section */
+.works-section {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1F2937;
+    margin-bottom: 14px;
+}
+
+/* Works Grid */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+/* Work Card */
+.work-card {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    min-height: 150px;
+}
+
+.work-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Title */
+.card-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.draft-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6B7280;
+}
+
+/* Footer */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    margin-top: auto;
+    padding-top: 6px;
+    border-top: 1px solid #E5E7EB;
+}
+
+.view-link {
+    color: #3B82F6;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.view-link:hover {
+    color: #2563EB;
+}
+
+.dots-icon {
+    font-size: 18px;
+    color: #6B7280;
+    cursor: pointer;
+}
+
+/* Empty State */
+.works-grid p {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 14px;
+    color: #9CA3AF;
+    margin-top: 10px;
+}
+
+.dots-menu {
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+    min-width: 120px;
+    padding: 5px 0;
+    font-size: 14px;
+    color: black;
+}
+
+.dots-menu-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dots-menu-item:hover {
+    background: #f3f4f6;
+}
+
+.rename-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}
+
+.rename-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.rename-modal h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #111827;
+}
+
+.rename-modal input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.rename-modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.rename-modal button {
+    padding: 8px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.rename-modal .cancel-btn {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.rename-modal .cancel-btn:hover {
+    background: #d1d5db;
+}
+
+.rename-modal .save-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.rename-modal .save-btn:hover {
+    background: #1d4ed8;
+}

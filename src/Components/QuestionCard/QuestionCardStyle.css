@@ -1,0 +1,106 @@
+
+.question-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 24px;
+    gap: 10px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.question-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-text {
+    border: none;
+    flex: 1;
+    font-size: 15px;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.question-type-dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.dropdown-icon{
+    position: absolute;
+    font-size: 14px;
+    left: 12px;
+}
+
+.question-type-dropdown select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 14px;
+    padding:  10px 14px 10px 30px;
+    border: 1px solid #D1D1D1;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+    background-color: white;
+    min-height: 40px;
+    
+}
+
+.question-type-dropdown select option{
+    padding: 10px;
+    font-size: 14px; 
+}
+
+.question-card .option-input-container {
+    margin-left: 24px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Image & Video Question Styles */
+.image-question,
+.video-question {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.uploaded-image,
+.uploaded-video {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.answer-input {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+/* Upload Buttons */
+.image-question button,
+.video-question button,
+.question-content button {
+    width: fit-content;
+    padding: 8px 14px;
+    background: #4da3ff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+

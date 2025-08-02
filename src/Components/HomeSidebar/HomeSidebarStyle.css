@@ -1,0 +1,42 @@
+.sidebar {
+    width: 230px;
+    background-color: #F9FBFD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 20px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.home-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 6px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link img {
+    height: 18px;
+    width: 18px;
+}
+
+.nav-link.active {
+    background-color: #CFE4FF;
+}
+
+.nav-link.hovered {
+    background-color: #CFE4FF;
+}

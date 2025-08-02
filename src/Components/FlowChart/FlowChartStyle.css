@@ -1,0 +1,123 @@
+/* Overlay covers only PageContent + RightPanel area */
+.flowchart-overlay {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Flowchart container centered inside overlay */
+.flowchart-container {
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Top: Page title box with arrow */
+.flowchart-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.flowchart-top-box {
+    background: #EEF4FD;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    min-width: 150px;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* True/False labels */
+.flowchart-labels {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Initiating Page Boxes */
+.flowchart-initiation {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.flowchart-box {
+    background: #EEF4FD;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 12px 25px;
+    min-width: 140px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Connector lines + child pages */
+.flowchart-connectors {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.connector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dotted-line {
+    border-left: 2px dashed #999;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.flowchart-next-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    float: right;
+    color: white;
+    background-color: black;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+}
+
+.flowchart-close-btn {
+    position: fixed; 
+    top: 100px;
+    right: 50px;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    z-index: 2000; 
+}
+
+

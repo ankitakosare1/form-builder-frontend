@@ -1,0 +1,154 @@
+/* ================== Container ================== */
+.analysis-container {
+  display: flex;
+  height: 100vh;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background-color: #F9FBFD;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px;
+  flex-shrink: 0;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  border-right: 1px solid #e5e7eb;
+}
+
+/* ================== Main Wrapper ================== */
+.analysis-main-wrapper {
+  margin-left: 230px;
+  flex: 1;
+  background: #ffffff;
+  border: 1.5px solid #d1d5db;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin-top: 10px;
+  margin-right: 5px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content */
+.analysis-main {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* ================== Header ================== */
+.analysis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.project-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.close-btn {
+  font-size: 28px;
+  font-weight: bold;
+  color: #6b7280;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #111827;
+}
+
+/* ================== Question Cards ================== */
+.question-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.question-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  color: #374151;
+}
+
+/* Charts Row */
+.charts-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Chart Boxes */
+.chart-box {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  border-radius: 10px;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================== Download Button ================== */
+.download-btn {
+  align-self: flex-end;
+  margin-top: 15px;
+  padding: 10px 16px;
+  background: #3B82F6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #2563EB;
+}
+
+/* ================== No Data ================== */
+.no-data {
+  color: #9ca3af;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* ================== Loading State ================== */
+.loading {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Scrollbar Styling */
+.analysis-main-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+.analysis-main-wrapper::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 8px;
+}
+.analysis-main-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}

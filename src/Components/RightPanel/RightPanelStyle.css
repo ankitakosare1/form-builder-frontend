@@ -1,0 +1,102 @@
+.right-panel{
+    width: 250px;
+    height: 100vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1.5px solid #ccc;
+    background-color: #EEF4FD;
+    position: relative;
+}
+
+.right-panel-content {
+    flex-grow: 1 1 auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.action-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.action-buttons button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 30px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.action-buttons img{
+    width: 16px;
+    height: 16px;
+}
+
+.color-picker-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.color-picker p{
+    margin: 0;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.color-control{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 6px 8px;
+    border-radius: 8px;
+    gap: 6px;
+    font-size: 12px;
+}
+
+.color-control input[type='color']{
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.color-code{
+    color: #333;
+}
+
+.separator {
+    margin: 0 5px;
+    color: #999;
+}
+
+.color-control select{
+    padding: 5px;
+    border: none;
+}
+
+.next-btn{
+    margin-top: 38px;
+    color: white;
+    background-color: black;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+    align-self: center;
+}

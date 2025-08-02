@@ -1,0 +1,185 @@
+.profile-page {
+    display: flex;
+    height: 100vh;
+    background: #f9fafb;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: #fff;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px; /* space between profile and menu */
+}
+
+/* Sidebar Profile */
+.sidebar-profile {
+    text-align: center;
+}
+
+.sidebar-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 8px;
+}
+
+.sidebar-profile h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.sidebar-profile p {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.sidebar-menu button {
+    text-align: left;
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s ease-in-out;
+}
+
+.sidebar-menu button.active {
+    background: #f3f4f6;
+    font-weight: 600;
+}
+
+.sidebar-menu button.logout {
+    color: #dc2626;
+}
+
+
+
+/* Main Content */
+.profile-main {
+    flex: 1;
+    padding: 30px 50px;
+}
+
+.profile-main h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+/* Profile Card */
+.profile-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 28px;
+    max-width: 680px;
+    margin: 0 auto;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 12px;
+}
+
+.profile-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid #e5e7eb;
+}
+
+.profile-header h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.profile-header p {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Input Fields */
+.profile-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 8px;
+}
+
+.profile-fields label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.profile-fields input {
+    border: none;
+    border-bottom: 1px solid #d1d5db;
+    padding: 4px 0;
+    font-size: 13px;
+    outline: none;
+    background: transparent;
+    color: #111827;
+}
+
+/* Buttons */
+.profile-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.save-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.save-btn:hover {
+    background: #1d4ed8;
+}
+
+.discard-btn {
+    background: #e5e7eb;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #374151;
+    cursor: pointer;
+}
+
+
+

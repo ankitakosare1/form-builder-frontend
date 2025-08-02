@@ -1,0 +1,56 @@
+.rating-wrapper {
+  width: 100%;
+  padding: 4px 0;
+}
+
+.rating-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+}
+
+.stars {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.star {
+  font-size: 30px;
+  color: #C4C4C4;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star.filled {
+  color: #FFD700; /* filled star color */
+}
+
+.star-count-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.star-count-box label {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.star-count-box input {
+  width: 48px;
+  height: 28px;
+  padding: 4px;
+  font-size: 14px;
+  background-color: #EAF4FF; 
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  text-align: center;
+}
+
+
+
+

@@ -1,0 +1,20 @@
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.profile img{
+    width: 18px;
+    height: 18px;
+}
+
+.profile span{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
